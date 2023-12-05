@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+
+    <!-- CDN da última versão compilada do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CDN da última versão compilada do JavaScript CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link para Fonte utilizada no Cabeçalho (Google Fonts) -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Borel&family=Sedgwick+Ave+Display&family=Shadows+Into+Light&display=swap');
+    </style>
+
+    <!-- CDN da últilma versão do Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+</head>
+<body>
+    
+    <!-- Cabeçalho da Página -->
+
+    <nav class="navbar" style="background-color:rgb(120, 21, 120)">
+        <div class="container-fluid">
+            <img src="img/Logo.png" style="width:50px;" title="purpleStock">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style="background-color:rgb(120, 21, 120)">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" title="Ir para a Página Inicial">Página Inicial</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formLogin.html" title="Acessar o Sistema">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lojascadastradas.html" title="Ir para a Página de Lojas Cadastradas em Nosso Site ">Lojas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container que abrigará o conteúdo da página -->
+    <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+        <!--Propaganda-->
+        <div class="container text-center" style="margin-top:30px; margin-bottom:100px;">
+
+            <div class="row">
+    
+                <div class="col-sm-3"></div>
+    
+                <div class="col-sm-6">
+    
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin:auto;">
+    
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                    
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/propaganda.jpg" alt="Propaganda3 - Foto 01" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/propaganda2.png" alt="Porpaganda2 - Foto 02" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/propaganda3.png" alt="Propaganda3 - Foto 03" class="d-block w-100">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+        <!-- Início da primeira linha da GRID -->
+        <div class="alert alert-info text-center" style="width:50%; margin:auto;margin-top: 30px;">
+            Há <strong>5</strong> itens disponíveis em nosso estoque! &nbsp<i class="bi bi-emoji-smile"></i>
+        </div>
+        <!-- Fim da primeira linha da GRID -->
+
+        <!-- Início da segunda linha da GRID-->
+        <div class="row" style="margin-top:30px;">
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/iphone15 frente.jpg" title='iphone 15' alt="Iphone 15">
+                    <div class="card-body">
+                        <h4 class="card-title"><b>iphone 15</b></h4>
+                        <p class="card-text"><b>Kz 995.496,00</b></p>
+                        <a href="iphone15.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width: 100%; height:100%;">
+                    <img class="card-img-top" src="img/poco x5 pro.jpg" title='poco x5 pro' alt="poco x5 pro">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Poco x5 pro</b></h4>
+                        <p class="card-text"><b>Kz 789.527,00</b></p>
+                        <a href="Pocox5pro.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Samsung a23.jpg" title='Samsung a23' alt="Samsung a23">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Samsung a23</b></h4>
+                        <p class="card-text"><b>Kz 596.173,00</b></p>
+                        <a href="SamsungA23.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card" style="width:100%; height:100%;">
+                    <img class="card-img-top" src="img/Pc.jpg" title='Pc Gamer' alt="Pc Gamer">
+                    <div class="card-body" style="height:100%">
+                        <h4 class="card-title"><b>Pc Gamer Boladão</b></h4>
+                        <p class="card-text"><b>Kz 4.820.000,00</b></p>
+                        <a href="PcGamer.html" class="btn btn-primary">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim da segunda linha da GRID -->
+
+    <!-- Div do Rodapé (Fixa na base) -->
+    <div class="mt-5 text-white text-center fixed-bottom" style="background-color:rgb(120, 21, 120)">
+        <p>
+            Interfaces para um sistema de vendas<br>
+            Desenvolvido por
+            <b><a href="mailto:jhonatankauadossantos@gmail.com?subjet">jhonatankauadossantos@gmail.com</a></b> para utilização na disciplina de Tecnologias Web
+        </p>
+    </div>
+
+</body>
+</html>
